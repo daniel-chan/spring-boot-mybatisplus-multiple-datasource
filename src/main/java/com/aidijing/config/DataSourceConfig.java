@@ -54,6 +54,7 @@ public class DataSourceConfig {
         return DruidDataSourceBuilder.create().build();
     }
 
+
     @Bean
     public SqlSessionFactory sqlSessionFactory ( DynamicMultipleDataSource dynamicMultipleDataSource ) throws
                                                                                                        Exception {
