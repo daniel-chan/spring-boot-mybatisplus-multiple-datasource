@@ -32,6 +32,7 @@ public class DataSourceConfig {
     @Bean
     public DynamicMultipleDataSource multipleDataSource ( @Qualifier( GlobalConstant.ORDER_DATA_SOURCE_KEY ) DataSource dataSourceOrder ,
                                                           @Qualifier( GlobalConstant.USER_DATA_SOURCE_KEY ) DataSource dataSourceUser ) {
+        //test merge
         DynamicMultipleDataSource dynamicMultipleDataSource = new DynamicMultipleDataSource();
         Map< Object, Object >     targetDataSources         = new HashMap<>();
         targetDataSources.put( GlobalConstant.ORDER_DATA_SOURCE_KEY , dataSourceOrder );
@@ -40,6 +41,7 @@ public class DataSourceConfig {
         dynamicMultipleDataSource.setDefaultTargetDataSource( dataSourceOrder );
         return dynamicMultipleDataSource;
     }
+
 
     @Primary
     @Bean
