@@ -9,7 +9,6 @@ CREATE TABLE `aidijing_user` (
 )
   DEFAULT CHARACTER SET = utf8;
 
-
 INSERT INTO `aidijing_user` (`id`, `username`, `password`, `email`) VALUES ('1', '披荆斩棘', '123456', 'yujunhao_8831@yahoo.com');
 
 
