@@ -19,7 +19,6 @@ import java.lang.annotation.Target;
 @Target( { ElementType.METHOD , ElementType.TYPE } )
 public @interface DynamicDataSource {
 
-
     @AliasFor( "dataSource" )
     String value () default StringUtils.EMPTY;
 
